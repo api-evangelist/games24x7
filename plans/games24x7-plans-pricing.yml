@@ -1,0 +1,20 @@
+generated: '2026-08-16'
+method: searched
+source: https://www.games24x7.com/ (full sitemap crawl, 2026-08-16)
+plan_count: 0
+plans: []
+note: >-
+  Games24x7 publishes no API plans or developer pricing because it publishes no API.
+  It is a business-to-consumer gaming operator; its commercial surface is consumer
+  game entry fees inside RummyCircle and My11Circle, not a metered developer product.
+  The published sitemap (https://www.games24x7.com/sitemap.xml, HTTP 200) contains no
+  /pricing, /plans, /developers or /api page, and /api and /developers both return 404.
+  This is a recorded zero, not an unchecked field.
+evidence:
+- url: https://www.games24x7.com/sitemap.xml
+  status: 200
+  finding: no pricing, plans, developer or API page in the published sitemap
+- url: https://www.games24x7.com/api
+  status: 404
+- url: https://www.games24x7.com/developers
+  status: 404

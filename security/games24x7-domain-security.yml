@@ -1,0 +1,47 @@
+generated: '2026-08-16'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml hosts plus the two consumer brand hosts
+  (rummycircle.com, my11circle.com) Games24x7 operates
+note: >-
+  Games24x7 publishes no API host, so there is no API-host row here. The corporate
+  site and the two consumer product hosts were probed instead. No CAA record and no
+  DNSSEC on any of the three registrable domains; HSTS is served on the corporate
+  Webflow site but not on either product host.
+hosts:
+- host: www.games24x7.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  3 22:27:01 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: www.rummycircle.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec  8 23:59:59 2026 GMT
+  hsts: false
+  hsts_max_age: null
+- host: www.my11circle.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Nov 28 23:59:59 2026 GMT
+  hsts: false
+  hsts_max_age: null
+domains:
+- domain: games24x7.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
+- domain: rummycircle.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
+- domain: my11circle.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject

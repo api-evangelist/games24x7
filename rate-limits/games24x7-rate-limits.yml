@@ -1,0 +1,18 @@
+generated: '2026-08-16'
+method: searched
+source: https://www.games24x7.com/ (full sitemap crawl, 2026-08-16)
+limit_count: 0
+rate_limits: []
+headers: []
+note: >-
+  No published rate limits, because there is no published API to limit. Games24x7 serves
+  no developer documentation, no API reference and no machine-readable specification on
+  any of its live hosts, so there is no documented window, quota, burst, exhaustion status
+  code, or X-RateLimit-* / RateLimit-* / Retry-After response-header contract to record.
+  This is a recorded zero, not an unchecked field.
+evidence:
+- url: https://www.games24x7.com/sitemap.xml
+  status: 200
+  finding: no developer or API reference page in the published sitemap
+- url: https://www.games24x7.com/developers
+  status: 404

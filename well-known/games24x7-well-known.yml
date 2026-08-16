@@ -1,0 +1,95 @@
+generated: '2026-08-16'
+method: probed
+source: live GET of the RFC 8615 /.well-known/ surface on every Games24x7 host
+note: >-
+  Every probed path returned 404 on all three live Games24x7 hosts. This file records
+  a measured ABSENCE, not a presence: no WellKnown, SecurityTxt or APICatalog pointer
+  is wired into apis.yml, and no raw documents were saved because none were served.
+  api.games24x7.com, developer.games24x7.com, dev.games24x7.com and techblog.games24x7.com
+  do not resolve in DNS (NXDOMAIN), so they were not probed over HTTP.
+hosts:
+- host: https://www.games24x7.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /security.txt
+    status: 404
+- host: https://www.rummycircle.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /security.txt
+    status: 404
+- host: https://www.my11circle.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /security.txt
+    status: 404
+unresolved_hosts:
+- host: api.games24x7.com
+  dns: NXDOMAIN
+- host: developer.games24x7.com
+  dns: NXDOMAIN
+- host: dev.games24x7.com
+  dns: NXDOMAIN
+- host: techblog.games24x7.com
+  dns: NXDOMAIN
+- host: status.games24x7.com
+  dns: NXDOMAIN
+- host: trust.games24x7.com
+  dns: NXDOMAIN
+- host: security.games24x7.com
+  dns: NXDOMAIN
+summary:
+  paths_probed: 30
+  hits: 0
+  agent_card_found: false

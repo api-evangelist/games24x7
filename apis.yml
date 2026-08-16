@@ -1,17 +1,34 @@
 aid: games24x7
 name: Games24x7
-description: 'Games24x7 is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Games24x7 is a Mumbai-headquartered Indian online skill-gaming company
+  founded in 2006 by Bhavin Pandya and Trivikraman Thampy, operating consumer real-money
+  and casual gaming platforms rather than a developer API business. Its portfolio spans
+  RummyCircle (online rummy), My11Circle (fantasy cricket, football, kabaddi and ludo)
+  and Wowzy (a three-dice ludo variant), backed by Tiger Global, The Raine Group and
+  Malabar Investment. The company publishes engineering writing on distributed systems,
+  Cassandra, Amazon Aurora, ksqlDB and React Native through its Resources section, runs
+  the TechXpedite accelerator, and maintains a small public GitHub organization
+  (games24x7-opensource) plus one first-party npm package for AI-assisted Appium test
+  automation. As of August 2026 it publishes no developer portal, no API documentation,
+  no machine-readable specification, and no partner or affiliate API of its own.'
+image: https://cdn.prod.website-files.com/651cf07e5bb9107daafa9310/651cf8a23d4234857765a701_Webclip.png
 url: https://raw.githubusercontent.com/api-evangelist/games24x7/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-16'
 modified: '2026-08-16'
 tags:
 - Company
+- Gaming
+- Online Gaming
+- Skill Gaming
+- Fantasy Sports
+- Real Money Gaming
+- Consumer Applications
+- Entertainment
+- Mobile Games
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +37,59 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://forgeglobal.com/games24x7_stock/
+  url: https://www.games24x7.com/
+- type: Support
+  url: https://www.games24x7.com/contact
+- type: Blog
+  url: https://www.games24x7.com/resources
+- type: PrivacyPolicy
+  url: https://www.games24x7.com/privacy-policy
+- type: TermsOfService
+  url: https://www.games24x7.com/terms-and-conditions
+- type: GitHubOrganization
+  url: https://github.com/games24x7-opensource
+- type: Compliance
+  url: https://cdn.prod.website-files.com/651cf07e5bb9107daafa9310/67c94cbbfe72bfd56632e216_ISO27001-Play%20Games24x7.pdf
+- type: Packages
+  url: packages/games24x7-packages.yml
+- type: LLMsTxt
+  url: llms/games24x7-llms.txt
+- type: DomainSecurity
+  url: security/games24x7-domain-security.yml
+- type: Conformance
+  url: conformance/games24x7-conformance.yml
+- type: Plans
+  url: plans/games24x7-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/games24x7-rate-limits.yml
+x-enrichment:
+  date: '2026-08-16'
+  status: minimal
+  artifacts_added: 7
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Games24x7 is a business-to-consumer skill-gaming operator whose entire product surface
+    is the RummyCircle, My11Circle and Wowzy apps; its published sitemap has no developer,
+    API or pricing page, /developers and /api both 404, and 30 contract-discovery probes
+    across games24x7.com, rummycircle.com and my11circle.com returned 404 on every path.
+  evidence:
+  - url: https://www.games24x7.com/sitemap.xml
+    status: 200
+  - url: https://www.games24x7.com/developers
+    status: 404
+  - url: https://www.games24x7.com/api
+    status: 404
+  - url: https://www.games24x7.com/openapi.json
+    status: 404
+  - url: https://www.games24x7.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.rummycircle.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.my11circle.com/openapi.json
+    status: 404
+  - url: https://www.games24x7.com/llms.txt
+    status: 404
+  checked: '2026-08-16'

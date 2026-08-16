@@ -1,0 +1,74 @@
+generated: '2026-08-16'
+method: searched
+source: https://registry.npmjs.org/ai-appium-lens and https://github.com/games24x7-opensource
+note: >-
+  Games24x7 publishes NO API client library, because it publishes no API. What it does
+  publish is internal engineering tooling open-sourced under the games24x7-opensource
+  GitHub organization (2 public repositories, created 2025-03-21). One of those is
+  distributed on npm under the games24x7-opensource maintainer account, which is what
+  makes it verifiably first-party. It is an AI-assisted Appium test-automation plugin,
+  NOT an SDK for a Games24x7 service — so this file carries a Packages pointer only and
+  deliberately does NOT emit an SDKs pointer, which would falsely credit the company
+  with a client library for an API it does not ship.
+  Probed registries with no first-party Games24x7 client library: npm, PyPI, RubyGems,
+  crates.io, NuGet, Maven Central, pkg.go.dev, Packagist.
+packages:
+- language: typescript
+  registry: npm
+  name: ai-appium-lens
+  url: https://www.npmjs.com/package/ai-appium-lens
+  install: npm install ai-appium-lens
+  official: true
+  official_evidence: >-
+    npm maintainer list includes the games24x7-opensource organization account; source
+    repository is https://github.com/games24x7-opensource/ai-appium-lens-plugin
+  kind: test-automation-plugin
+  api_client: false
+  version: 5.0.4
+  published: '2025-06-10'
+  license: ISC
+  description: >-
+    AI-enabled Appium plugin using Google Vision / Vertex AI for UI analysis and Gemini
+    NLP for natural-language UI interaction and accessibility insights.
+- language: javascript
+  registry: npm
+  name: com.games24x7.custompackage
+  url: https://www.npmjs.com/package/com.games24x7.custompackage
+  install: npm install com.games24x7.custompackage
+  official: false
+  official_evidence: >-
+    Uses the com.games24x7 reverse-domain namespace but is maintained by an individual
+    account (pooja.kubde), is described only as "This is an example package", and is not
+    referenced from any Games24x7 property. Recorded for completeness, treated as an
+    unverified employee test publish rather than a company artifact.
+  kind: example-publish
+  api_client: false
+  version: 1.2.3
+  published: '2020-12-18'
+repositories:
+- name: starlink-ota
+  url: https://github.com/games24x7-opensource/starlink-ota
+  language: TypeScript
+  description: Monorepo containing OTA server, cli and dashboard for release management
+  stars: 4
+  last_push: '2025-07-15'
+  registry: null
+  version: null
+  published: null
+  note: >-
+    Not published to any package registry that answers for this name; version is null
+    because there is no registry metadata endpoint to read, not because it was unchecked.
+- name: ai-appium-lens-plugin
+  url: https://github.com/games24x7-opensource/ai-appium-lens-plugin
+  language: TypeScript
+  description: null
+  stars: 1
+  last_push: '2025-06-10'
+  registry: npm
+  version: 5.0.4
+  published: '2025-06-10'
+summary:
+  official_api_clients: 0
+  official_packages: 1
+  unverified_packages: 1
+  public_repositories: 2
