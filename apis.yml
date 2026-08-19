@@ -15,7 +15,7 @@ image: https://cdn.prod.website-files.com/651cf07e5bb9107daafa9310/651cf8a23d423
 url: https://raw.githubusercontent.com/api-evangelist/games24x7/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-08-16'
 modified: '2026-08-16'
 tags:
