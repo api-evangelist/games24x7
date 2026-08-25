@@ -1,0 +1,14 @@
+{
+  "repo": "games24x7",
+  "feeds": [
+    {
+      "source": "https://www.games24x7.com/contact",
+      "feed_url": "https://www.games24x7.com/contact",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-08-22T20:20:02Z"
+}
