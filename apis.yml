@@ -11,6 +11,17 @@ description: 'Games24x7 is a Mumbai-headquartered Indian online skill-gaming com
   (games24x7-opensource) plus one first-party npm package for AI-assisted Appium test
   automation. As of August 2026 it publishes no developer portal, no API documentation,
   no machine-readable specification, and no partner or affiliate API of its own.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/651cf07e5bb9107daafa9310/651cf8a23d4234857765a701_Webclip.png
 url: https://raw.githubusercontent.com/api-evangelist/games24x7/refs/heads/main/apis.yml
 x-type: company
